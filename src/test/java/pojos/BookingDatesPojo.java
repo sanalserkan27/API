@@ -1,0 +1,37 @@
+package pojos;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class BookingDatesPojo {
+    /*
+    "bookingdates" : {
+                                 "checkin" : "2021-06-01",
+                                 "checkout" : "2021-06-10"
+                                          },
+     */
+    private String checkin;
+    private String checkout;
+
+    public String getCheckin() {
+        return checkin;
+    }
+
+    public void setCheckin(String checkin) {
+        this.checkin = checkin;
+    }
+
+    public String getCheckout() {
+        return checkout;
+    }
+
+    public void setCheckout(String checkout) {
+        this.checkout = checkout;
+    }
+
+}
